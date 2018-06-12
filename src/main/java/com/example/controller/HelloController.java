@@ -21,8 +21,6 @@ public class HelloController {
     @Autowired
     private ProductCategoryService productCategoryService;
     private static Integer userNum=0;
-    @Autowired
-    private ProductCategoryRepository productCategoryRepository;
 
     @RequestMapping("/categorylist")
     public String index(Model model, @RequestParam(value = "start", defaultValue = "0") Integer start, @RequestParam(value = "limit", defaultValue = "2") Integer limit){
